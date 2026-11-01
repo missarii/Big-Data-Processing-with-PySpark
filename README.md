@@ -21,55 +21,34 @@ This repository contains the practical exploration of a large student performanc
 
 ## How to Run
 
-### Option 1 – Google Colab (Recommended)
+### Google Colab (Recommended)
 
 1. Open [Google Colab](https://colab.research.google.com/).
 2. Upload `Lab01_Big_Data_Processing_with_PySpark.ipynb` and the CSV file.
 3. Run the cells in order. The first cell installs PySpark if needed.
 
-### Option 2 – Local
-
-```bash
-pip install pyspark findspark
-# Make sure Java 8/11/17+ is installed
-jupyter notebook Lab01_Big_Data_Processing_with_PySpark.ipynb
-```
-
 ## Lab Requirements Covered
 
-### PySpark DataFrame Operations (≥ 3)
+### PySpark DataFrame Operations (4)
 
-1. **Exploration** – `printSchema()`, `describe()`, distinct counts
-2. **Filtering + Ordering** – Failures in EEI6366, high performers in Colombo
-3. **GroupBy + Aggregations** – Average marks & pass rate by Center and by Course
-4. **Bonus** – Derived column (`ca_exam_gap`) + Window ranking (Top 3 per course)
+1. Basic Exploration & Descriptive Statistics  
+2. Filtering and Ordering  
+3. GroupBy and Aggregations  
+4. Derived Column and Window Ranking  
 
-### Spark SQL Operations (≥ 3)
+### Spark SQL Operations (4)
 
-1. Pass rate & average marks by Academic Year + Center
-2. Grade distribution for EEI6366 with ordered CASE
-3. Window function – difference from center average
-4. Pattern discovery – strong CA but weak Exam students
-
-## Key Insights
-
-- High overall pass rate (~90%).
-- Performance differs across regional centers.
-- A subset of students score well in Continuous Assessment but poorly in the Final Exam – useful for academic support interventions.
-- Window functions and multi-level aggregations work efficiently even on 150k+ rows.
+1. Filtering and Aggregation  
+2. Grade Distribution with CASE  
+3. Window Function  
+4. Finding Interesting Patterns  
 
 ## Repository Structure
 
 ```
 ├── README.md
-├── Lab01_Big_Data_Processing_with_PySpark.ipynb   # Main notebook
-└── open_university_student_performance.csv       # Dataset
+├── Lab01_Big_Data_Processing_with_PySpark.ipynb
+└── open_university_student_performance.csv   (upload this yourself)
 ```
-
-## Author / Group
-
-Prepared for EEI6366 Lab 01.
-
----
 
 **GitHub:** https://github.com/missarii/Big-Data-Processing-with-PySpark
